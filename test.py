@@ -15,5 +15,3 @@ def valid():
         	number,result = t
         	assert LuhnCard.CheckValidNumber(number)
 
-if __name__=="__main__":
-	valid()
