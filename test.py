@@ -1,7 +1,7 @@
 import LuhnCard
 
 def valid():
-    tests = [
+	tests = [
 		("0000000000000000", True),
 		("4111111111111111", True),
 		("5500000000000004", True),
@@ -9,8 +9,11 @@ def valid():
 		("5425233430109903", True),
 		("6034883265619896", True),
 		("4242424242424249", False),
-    ]
+	]
 
-    for t in tests:
-        number,result = t
-        assert LuhnCard.CheckValidNumber(number)
+	for t in tests:
+        	number,result = t
+        	assert LuhnCard.CheckValidNumber(number)
+
+if __name__=="__main__":
+	valid()
