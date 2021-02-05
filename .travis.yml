@@ -11,5 +11,6 @@ install:
     - pip install coveralls
 script:
     - coverage run --source=LuhnCard -m LuhnCard
+    
 after_success:
     - coveralls
