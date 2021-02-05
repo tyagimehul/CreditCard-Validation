@@ -5,9 +5,11 @@ python:
     - "3.7"
     - "3.8"
 install:
+    - pip install pytest
+    - pip install pytest-cov
     - pip install coverage
     - pip install coveralls
 script:
-    - coverage run test.py
+    - coverage run --source=LuhnCard -m LuhnCard
 after_success:
-    coveralls
+    - coveralls
