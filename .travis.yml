@@ -10,7 +10,7 @@ install:
     - pip install coverage
     - pip install coveralls
 script:
-    - coverage run --source=LuhnCard -m LuhnCard
+    - coverage run --source=test -m test
     
 after_success:
     - coveralls
